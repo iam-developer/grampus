@@ -1,0 +1,210 @@
+@media screen and (max-width: 1200px) {
+    .menu--block a {
+        margin: 0 10px;
+    }
+    .logo a {
+        font-size: 40px;
+    }
+    .header--back {
+        padding: 8px 0;
+    }
+    .fixed--menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #fff;
+        z-index: 9999;
+        transition: .4s;
+    }
+    .fixed--menu--block {
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+    }
+    .menu--block a {
+        margin: 0;
+        font-size: 24px;
+    }
+    .phone--big {
+        font-size: 22px;
+    }
+    .menu--block {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        line-height: 50px;
+    }
+    .phone {
+        text-align: left;
+        padding: 50px 0 10px;
+    }
+    .close--menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-family: 'HelveticaNeueCyr-Bold';
+        color: #000;
+        font-size: 40px;
+    }
+    .social--links {
+        margin-right: 30px;
+    }
+    .contacts--title {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .benefits--block {
+        margin: 40px 0;
+    }
+    .sldier--title {
+        font-size: 30px;
+    }
+    .description {
+        font-size: 14px;
+        padding: 10px 0 20px;
+    }
+    .slider--container .right__arrow {
+        top: 40%;
+    }
+    .slider--container .left__arrow {
+        top: 40%;
+    }
+    .title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .description {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .catalog--block--desc {
+        padding-top: 0;
+    }
+    .contacts--card {
+        left: 20px;
+    }
+    .footer--block:nth-child(2) {
+        display: none;
+    }
+    .footer--phone {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .contacts--card {
+        position: inherit;
+        margin: 40px 0;
+        width: 100%;
+    }
+    .map iframe {
+        height: 340px;
+    }
+    .slider-block__item {
+        flex-direction: column;
+    }
+    .slider--img {
+        padding: 50px;
+    }
+    .slider--container .right__arrow {
+        top: 50%;
+    }
+    .slider--container .left__arrow {
+        top: 50%;
+    }
+    .catalog--product {
+        flex-direction: column;
+    }
+    .btn {
+        margin: 10px 0;
+    }
+    .btn2 {
+        top: 0;
+    }
+    .catalog--container7 {
+        padding: 50px 0;
+    }
+    .contact--text {
+        font-size: 14px;
+    }
+    .contact--mini--txt {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer--btn a {
+        font-size: 10px;
+        padding: 8px 20px;
+    } 
+    .footer--btn {
+        padding: 1px 1px 5px 2px;
+    }
+    .footer--logo {
+        font-size: 26px;
+    }
+    .benefits--title {
+        font-size: 30px;
+    }
+    .header--back::before {
+        left: -47px;
+    }
+    .header--back::after {
+        right: -47px;
+    }
+    .logo a {
+        font-size: 32px;
+    }
+    .slider--container .right__arrow {
+        right: 0;
+    }
+    .slider--container .left__arrow {
+        left: 0;
+    }
+    .slider--container {
+        padding: 0 20px;
+    }
+    .slider--img {
+        padding: 20px 100px 20px 0;
+    }
+    .slider--container .slick-dots li button:before {
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .contacts--header .social--links a svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+    .contacts--title {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .slider-block__item {
+        padding: 60px 0 20px;
+    }
+    .sldier--title {
+        font-size: 22px;
+    }
+    .description {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .slider--container .slick-dots {
+        bottom: 0;
+    }
+}
