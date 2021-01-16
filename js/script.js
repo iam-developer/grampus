@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
 // При наведении на меню:
 $('.menu--link').hover(function() {
     $(this).addClass('active');
@@ -35,3 +34,11 @@ $('.close--menu').on('click', function() {
 });
 
 });
+
+// Preloader
+
+let preloader = document.getElementById('preloader');
+
+window.onload = function() {
+  preloader.style.display = 'none';
+}
