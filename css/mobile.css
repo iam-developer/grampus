@@ -1,4 +1,10 @@
 @media screen and (max-width: 1200px) {
+    .contacts--map--iframe {
+        padding-left: 30px;
+    }
+    .add--padding {
+        padding: 0px 0 30px;
+    }
     .fixed--menu {
         width: 100%;
     }
@@ -69,8 +75,57 @@
     .contacts--title {
         font-size: 22px;
     }
+    .error--title {
+        font-size: 280px;
+    }
 }
 @media screen and (max-width: 991px) {
+    .error--title {
+        font-size: 156px;
+    }
+    .error--txt {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .kart--tovar--cont {
+        position: inherit;
+    }
+    .kart--tovara--title {
+        font-size: 18px;
+    }
+    .kart--tovara--text {
+        padding: 10px 6px;
+    }
+    .kart--tovara--cost span {
+        font-size: 20px;
+    }
+    .kart--tovara--cost {
+        line-height: 21px;
+        padding: 0;
+    }
+    .kart--tovar--cont {
+        padding: 10px 0;
+    }
+    .mini--img img {
+        margin: 0 0 6px 5px;
+    }
+    .about--num {
+        font-size: 42px;
+        line-height: 41px;
+    }
+    .contacts--map--iframe {
+        position: inherit;
+        width: 750px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    #contacts--info {
+        text-align: center;
+    }
+    .contacts__address__block {
+        text-align: left;
+    }
     .benefits--block {
         margin: 40px 0;
     }
@@ -109,6 +164,41 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .kart--tovara--title {
+        padding-top: 10px;
+    }
+    .space {
+        display: none;
+    }
+    .product--block {
+        margin: 15px 10px;
+        width: 158px;
+    }
+    .product--txt {
+        font-size: 10px;
+    }
+    .line12  {
+        top: 60px;
+    }
+    .about--block2 {
+        text-align: right;
+    }
+    .about--img {
+        padding-top: 20px;
+    }
+    .num--block {
+        justify-content: space-between;
+    }
+    .contacts--map--iframe {
+        width: 100%;
+        padding: 0;
+    }
+    .contact--header--title {
+        font-size: 28px;
+    }
+    #contacts--page {
+        padding: 40px 0 50px;
+    }
     .contacts--card {
         position: inherit;
         margin: 40px 0;
@@ -147,8 +237,34 @@
     .contact--mini--txt {
         font-size: 12px;
     }
+    .mini--img img {
+        margin: 0 0 7px 7px;
+    }
 }
 @media screen and (max-width: 576px) {
+    .error--title {
+        font-size: 106px;
+        padding: 20px 0;
+    }
+    .error--page--container {
+        flex-direction: column;
+    }
+    .error--btn {
+        justify-content: center;
+    }
+    .error--btn2 {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .last--footer--txt {
+        padding-top: 30px;
+    }
+    .mini--img {
+        padding-right: 7px;
+    }
+    .products--contain {
+        justify-content: center;
+    }
     .footer--btn a {
         font-size: 10px;
         padding: 8px 20px;
@@ -187,6 +303,24 @@
         width: 10px;
         height: 10px;
     }
+    .contacts__address__block {
+        padding: 30px 0;
+    }
+    .about--num {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .about--block {
+        padding: 40px 0 0;
+    }
+}
+@media screen and (max-width: 460px) {
+    .mini--img img {
+        margin: 0 0 6px 6px;
+    }
+    .politika--header--title {
+        font-size: 26px;
+    }
 }
 @media screen and (max-width: 380px) {
     .contacts--header .social--links a svg {
@@ -197,6 +331,12 @@
     .contacts--title {
         font-size: 18px;
         padding-top: 10px;
+    }
+    .mini--img img {
+        margin: 0 0 6px 5px;
+    }
+    .kart--tovara--btn a {
+        padding: 11px 50px;
     }
 }
 @media screen and (max-width: 360px) {
@@ -212,5 +352,14 @@
     }
     .slider--container .slick-dots {
         bottom: 0;
+    }
+    .product--block {
+        margin: 15px 7px;
+        width: 140px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .mini--img img {
+        margin: 0 0 5px 5px;
     }
 }

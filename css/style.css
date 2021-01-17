@@ -20,18 +20,6 @@
     src: url(../fonts/HelveticaMediumItaicl.ttf);
 }
 @font-face {
-    font-family: 'HelveticaThin-Italic';
-    src: url(../fonts/HelveticaThinItalic.ttf);
-}
-@font-face {
-    font-family: 'HelveticaUltra-Light';
-    src: url(../fonts/HelveticaUltraLight.ttf);
-}
-@font-face {
-    font-family: 'HelveticaUltraLight-Italic';
-    src: url(../fonts/HelveticaUltraLightItalic.ttf);
-}
-@font-face {
     font-family: 'Roboto-Bold';
     src: url(../fonts/Roboto-Bold.ttf);
 }
@@ -39,7 +27,6 @@
     font-family: 'Roboto-Regular';
     src: url(../fonts/Roboto-Regular.ttf);
 }
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -126,6 +113,8 @@ body {
     background: -o-linear-gradient(right, #166fa8, #419fda);
     background: linear-gradient(to left, #166fa8, #419fda);background: linear-gradient(to left, #166fa8, #419fda);
 }
+
+/* Preloader */
 #preloader {
     display: flex;
     justify-content: center;
@@ -136,8 +125,6 @@ body {
     z-index: 999999;
     background-color: #fff;
 }
-/* Preloader */
-
 #fountainTextG {
 	width:92px;
 	margin:auto;
@@ -225,10 +212,6 @@ body {
 		-webkit-animation-delay:1.64s;
 		-moz-animation-delay:1.64s;
 }
-
-
-
-
 @keyframes bounce_fountainTextG{
 	0%{
 		transform:scale(1);
@@ -290,72 +273,6 @@ body {
 }
 /* preloader end */
 
-.vertical--block {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 11;
-}
-.vertical--link {
-    color: #404F56;
-    font-size: 14px;
-    font-family: 'Inter-Medium-500';
-    padding: 0 20px;
-}
-.left--blok {
-    position: absolute;
-    top: 0;
-    left: -145px;
-    transform: rotate(-90deg);
-}
-.left--blok::before {
-    content: '';
-    position: absolute;
-    top: 18px;
-    left: -57px;
-    width: 70px;
-    height: 2px;
-    background-color: #DEDEDE;
-    transform: rotate(0deg);
-}
-.left--blok::after {
-    content: '';
-    position: absolute;
-    top: 18px;
-    right: -60px;
-    width: 70px;
-    height: 2px;
-    background-color: #DEDEDE;
-    transform: rotate(0deg);
-}
-.right--blok {
-    position: absolute;
-    top: 0;
-    right: -68px;
-    transform: rotate(90deg);
-}
-.right--blok::before {
-    content: '';
-    position: absolute;
-    top: 18px;
-    left: -57px;
-    width: 70px;
-    height: 2px;
-    background-color: #DEDEDE;
-    transform: rotate(0deg);
-}
-.right--blok::after {
-    content: '';
-    position: absolute;
-    top: 18px;
-    right: -60px;
-    width: 70px;
-    height: 2px;
-    background-color: #DEDEDE;
-    transform: rotate(0deg);
-}
 /* ...........Главная страница ............*/
 #header {
     max-width: 2000px;
@@ -409,6 +326,7 @@ body {
     width: 100%;
 }
 .close--menu {
+    cursor: pointer;
     display: none;
 }
 .burger--menu {
@@ -604,6 +522,78 @@ body {
     -ms-transform: rotate(3deg);
         transform: rotate(3deg);
 }
+.line12 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 120%;
+    height: 1px;
+    background-color: rgb(224, 224, 224);
+    z-index: -1;
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+}
+.line13 {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    width: 120%;
+    height: 1px;
+    background-color: rgb(224, 224, 224);
+    z-index: -1;
+    -webkit-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+        transform: rotate(8deg);
+}
+.line14 {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 120%;
+    height: 1px;
+    background-color: rgb(224, 224, 224);
+    z-index: -1;
+    -webkit-transform: rotate(-14deg);
+    -ms-transform: rotate(-14deg);
+        transform: rotate(-14deg);
+}
+.line15 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 120%;
+    height: 1px;
+    background-color: rgb(224, 224, 224);
+    z-index: -1;
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+}
+.line16 {
+    position: absolute;
+    top: 400px;
+    left: -33px;
+    width: 120%;
+    height: 1px;
+    background-color: rgb(224, 224, 224);
+    z-index: -1;
+    -webkit-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+        transform: rotate(9deg);
+}
+.line17 {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 120%;
+    height: 1px;
+    background-color: rgb(224, 224, 224);
+    z-index: -1;
+    -webkit-transform: rotate(-14deg);
+    -ms-transform: rotate(-14deg);
+        transform: rotate(-14deg);
+}
 .sldier--title {
     font-family: 'HelveticaNeueCyr-Heavy';
     font-size: 50px;
@@ -678,7 +668,7 @@ body {
 }
 .slider--container .left__arrow:hover {
     box-shadow: 1px 1px 2px #616161;
-    background-color: #1f8dd3;
+    background-color: #77c8fa;
 }
 .slider--container .right__arrow {
     position: absolute;
@@ -694,7 +684,7 @@ body {
 }
 .slider--container .right__arrow:hover {
     box-shadow: 1px 1px 2px #616161;
-    background-color: #1f8dd3;
+    background-color: #77c8fa;
 }
 /* ///////////// */
 #benefits {
@@ -925,4 +915,314 @@ body {
     font-family: 'Roboto-Bold';
     font-size: 15px;
     color: #fff;
+}
+
+/* ...................Страница "Контакты"...................... */
+#contacts--page {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 40px 0 100px;
+    position: relative;
+}
+.contats--header--link--block {
+    display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+-webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.contats--header--link {
+    font-family: 'HelveticaNeueCyr-Light';
+    font-size: 14px;
+    color: #000;
+}
+.contacts--header--link--block a:hover {
+    color: #187cbb;
+}
+.contact--header--title {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 40px;
+    color: #000;
+    margin-top: 40px;
+}
+.contacts__address__block {
+    padding: 30px 30px 30px 0;
+}
+.contacts--mini__txt {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 14px;
+    coloR: #7f7f7f;
+}
+.contacts--big__txt  {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 18px;
+    coloR: #000;
+    padding: 4px 0 30px;
+}
+.add--padding {
+    padding: 20px 0 50px;
+}
+.social--links--title {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 14px;
+    color: #a6a6a6;
+    padding: 7px 0;
+}
+.contacts--social--links a:first-child svg {
+    margin-left: 0;
+}
+.contacts__address__block {
+    background-color: #fff;
+}
+#contacts--info {
+    position: relative;
+}
+.contacts--map--iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+}
+
+/* .............Страница "О компании"........... */
+#about--company  {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #fff;
+}
+.about--page {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+}
+.about--txt {
+    font-family: 'HelveticaNeueCyr-Medium';
+    font-size: 14px;
+    color: #000;
+}
+.about--num {
+    font-family: 'HelveticaNeueCyr-Heavy';
+    font-size: 60px;
+    line-height: 60px;
+    color: #2a93d5;
+}
+.about--block {
+    padding: 40px 0;
+}
+.num--block {
+    justify-content: space-around;
+}
+
+.product--block {
+    margin: 30px 10px;
+    width: 206px;
+}
+.product--img {
+    position: relative;
+    overflow: hidden;
+    transition: .2s all;
+}
+.product--img.active {
+    position: relative;
+    overflow: hidden;
+    transition: .2s all;
+}
+.product--img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: .2s;
+    background-color: rgb(42, 147, 213, 0.7);
+}
+.product--img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: .2s;
+    background-color: rgb(42, 147, 213, 0.7);
+}
+.product--img.active::before {
+    height: 50%;
+}
+.product--img.active::after {
+    height: 50%;
+}
+.product--block--link {
+    font-family: 'HelveticaNeueCyr-Medium';
+    font-size: 14px;
+    color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-decoration: underline;
+    display: none;
+}
+.product--block--link:hover {
+    color: #f5f5f5;
+}
+.product--block--link.active {
+    display: block;
+}
+.product--txt {
+    font-family: 'HelveticaNeueCyr-Medium';
+    font-size: 14px;
+    color: #000;
+    padding-top: 7px;
+    cursor: default;
+    text-transform: uppercase;
+}
+/* .....................Страница "Карточка товара".................. */
+.kartochka--tovara {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+}
+.mini--img img {
+    margin: 0 0 7px 7px;
+}
+.kart--tovar--right {
+    position: relative;
+}
+.kart--tovara--title {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 21px;
+    color: #000;
+}
+.kart--tovara--text {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 16px;
+    color: #868686;
+    padding: 30px 0 10px;
+}
+.kart--tovara--desc {
+    font-family: 'HelveticaNeueCyr-Medium';
+    font-size: 14px;
+    color: #000;
+}
+.kart--tovar--cont {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0;
+}
+.kart--tovara--cost {
+    padding: 0;
+}
+.kart--tovara--cost span {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 24px;
+    color: #000;
+}
+.kart--tovara--btn {
+    margin-top: 0;
+}
+.kart--tovara--btn a {
+    padding: 11px 60px;
+}
+.o--tovare--title {
+    font-family: 'HelveticaNeueCyr-Heavy';
+    font-size: 16px;
+    color: #868686;
+    text-transform: uppercase;
+    padding: 40px 0 20px;
+}
+.kart--home--link {
+    flex-wrap: wrap;
+}
+/* .............Страница "404"............. */
+.error--page {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 80px 0 0;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.error--arrow {
+    padding: 6px 5px;
+    border-radius: 50%;
+    background: #ededed;
+    box-shadow: 2px 2px 4px #616161;
+    cursor: pointer;
+    transition: .3s;
+}
+.error--title {
+    font-family: 'HelveticaNeueCyr-Heavy';
+    font-size: 324px;
+    color: #187cbb;
+}
+.error--text {
+    font-family: 'HelveticaNeueCyr-Medium';
+    font-size: 24px;
+    color: #187cbb;
+}
+.error--desc {
+    font-family: 'HelveticaNeueCyr-Light';
+    font-size: 14px;
+    color: #696969;
+    padding: 60px 0 20px;
+}
+.error--txt {
+    font-family: 'HelveticaNeueCyr-Medium';
+    font-size: 14px;
+    color: #696969;
+    line-height: 16px;
+    margin-left: 14px;
+    transition: .3s;
+}
+.error--txt--right {
+    margin-right: 14px;
+    margin-left: 0;
+}
+.error--btn:hover .error--arrow {
+    box-shadow: 2px 2px 3px #616161;
+    background-color: #4eb8fa;
+}
+.error--btn:hover .error--txt {
+    color: #4eb8fa;
+}
+.error--btn {
+    justify-content: flex-start;
+}
+.error--btn2 {
+    justify-content: flex-end;
+}
+/* .............Страница "Политика конфиденциальности"........... */
+#politika {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 40px 0 70px;
+    background-color: #fff;
+}
+.politika--title {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 18px;
+    color: #000;
+}
+.politika--subtitle {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 14px;
+    color: #000;
+    padding: 20px 0;
+}
+.politika--text  {
+    font-family: 'HelveticaNeueCyr-Medium';
+    font-size: 14px;
+    color: #000;
 }
