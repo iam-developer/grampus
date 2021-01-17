@@ -607,6 +607,12 @@ body {
     background: linear-gradient(to right, #389ad8, #1980c2);
     transition: .3s;
 }
+.slider--btn:focus {
+    outline: none;
+    -webkit-box-shadow: inset 1px 1px 4px #256896;
+    box-shadow: inset 1px 1px 4px #135886;
+    color: #fff;
+}
 .slider--desc {
     padding-top: 20px;
     padding-bottom: 30px;
