@@ -32,7 +32,15 @@ $(document).ready(function () {
     }
   );
 
-  // Главная страница. Слайдер:
+// Модальное окно:
+$('.modal--btn').on('click', function() {
+  $('.modal--form').addClass('show--modal');
+});
+$('.close--button').on('click', function() {
+  $('.modal--form').removeClass('show--modal');
+});
+
+// Главная страница. Слайдер:
   $(".slider--container").slick({
     infinite: true,
     dots: true,
@@ -40,17 +48,23 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    // autoplay: true,
-    autoplaySpeed: 1800,
+    autoplay: true,
+    autoplaySpeed: 2200,
     prevArrow: "<img class='left__arrow' src='img/left-arrow.png'>",
     nextArrow: "<img class='right__arrow' src='img/right-arrow.png'>",
   });
 });
 
-// Preloader
+$(document).ready(function(){
 
+  $("#phone").mask("+7 (999) 999-99-99");
+
+});
+
+// Preloader
 let preloader = document.getElementById("preloader");
 
 window.onload = function () {
   preloader.style.display = "none";
 };
+

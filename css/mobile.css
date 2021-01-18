@@ -1,4 +1,9 @@
 @media screen and (max-width: 1200px) {
+    #header {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+    }
     .contacts--map--iframe {
         padding-left: 30px;
     }
@@ -70,13 +75,26 @@
         font-size: 40px;
     }
     .social--links {
-        margin-right: 30px;
+        margin: 30px 30px 0 0;
     }
     .contacts--title {
         font-size: 22px;
     }
     .error--title {
         font-size: 280px;
+    }
+    .phone--mobile {
+        display: block;
+        padding: 7px 0 0;
+    }
+    .desktop--phone {
+        display: none;
+    }
+    .header--back::before {
+        background-color: transparent;
+    }
+    .header--back::after {
+        background-color: transparent;
     }
 }
 @media screen and (max-width: 991px) {
@@ -241,7 +259,28 @@
         margin: 0 0 7px 7px;
     }
 }
+@media screen and (max-width: 610px) {
+    .modal--content {
+        width: 26rem;
+    }
+    .form--contact {
+        padding: 14px 20px;
+    }
+    .modal--input {
+        padding: 8px 12px;
+    }
+    .modal--title {
+        padding: 18px 20px;
+    }
+}
 @media screen and (max-width: 576px) {
+    .phone--mobile .phone--big {
+        font-size: 16px;
+        line-height: 15px;
+    }
+    .phone--mobile .phone--mini {
+        font-size: 14px;
+    }
     .error--title {
         font-size: 106px;
         padding: 20px 0;
@@ -313,6 +352,14 @@
     .about--block {
         padding: 40px 0 0;
     }
+    .modal--input {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .modal--content {
+        width: 23rem;
+    }
 }
 @media screen and (max-width: 460px) {
     .mini--img img {
@@ -320,6 +367,34 @@
     }
     .politika--header--title {
         font-size: 26px;
+    }
+    .form--desc {
+        padding: 12px 0 7px;
+    }
+    .modal--select {
+        padding: 24px 0 14px;
+    }
+    .modal--content {
+        width: 20rem;
+    }
+    .modal--input {
+        padding: 6px 12px;
+    }
+    .modal--title {
+        font-size: 18px;
+    }
+    .form--desc {
+        font-size: 14px;
+    }
+    .modal--input {
+        font-size: 12px;
+    }
+    .modal--input::placeholder {
+        font-size: 12px;
+    }
+    .modal--select--txt {
+        font-size: 11px;
+        line-height: 11px;
     }
 }
 @media screen and (max-width: 380px) {
@@ -357,9 +432,18 @@
         margin: 15px 7px;
         width: 140px;
     }
+    .modal--content {
+        width: 18rem;
+    }
 }
 @media screen and (max-width: 340px) {
     .mini--img img {
         margin: 0 0 5px 5px;
+    }
+    .modal--content {
+        width: 17rem;
+    }
+    .modal--title {
+        font-size: 17px;
     }
 }

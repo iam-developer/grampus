@@ -12,6 +12,25 @@
 </head>
 
 <body>
+    <div class="modal--form">
+		<div class="modal--content">
+			<span class="close--button">&times;</span>
+            <h5 class="modal--title">Заявка на оборудование</h5>
+            <form action="" class="form--contact" onsubmit="return false">
+                <p class="form--desc">Ваше ФИО</p>
+                <input class="modal--input" required type="text" name="" id="" placeholder="Смирнов Александр Викторович">
+                <p class="form--desc">Номер телефон</p>
+                <input class="modal--input modal--input--phone" id="phone" type="tel" name="tel" placeholder="+7(___)___-__-__" required>
+                <p class="form--desc">Почта</p>
+                <input class="modal--input modal--input--email" required type="email" name="" id="" placeholder="Grampus-studio@yandex.ru">
+                <div class="modal--select d-flex justify-content-start align-items-center">
+                    <input type="checkbox" class="modal--checkbox">
+                    <p class="modal--select--txt">Я ознакомлен(а) с <a href="../politika_konfidencialnosti/">правилами</a> обработки персональных данных</p>
+                </div>
+                <button class="send--knopka">ОТПРАВИТЬ ЗАЯВКУ</button>
+            </form>
+		</div>
+	</div>
 
     <div id="preloader">
         <div id="fountainTextG">
@@ -41,7 +60,7 @@
                                 <a class="menu--link active--menu active" href="./">ПРОДУКЦИИ</a>
                                 <a class="menu--link" href="./../kontakty/">КОНТАКТЫ</a>
                             </div>
-                            <div class="phone">
+                            <div class="phone desktop--phone">
                                 <div class="phone--big">8 800 000 00 00</div>
                                 <div class="phone--mini">8 921 111 11 22</div>
                             </div>
@@ -104,6 +123,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="phone phone--mobile">
+                        <div class="phone--big">8 800 000 00 00</div>
+                        <div class="phone--mini">8 921 111 11 22</div>
+                    </div>
                     <div class="burger--menu">
                         <span class="line"></span>
                         <span class="line"></span>
@@ -159,8 +182,8 @@
                             Стоимость<br/>
                             <span class="kart--tovara--cost">25 000 руб.</span>
                         </div>
-                        <div class="btn kart--tovara--btn">
-                            <a href="javascript:void(0)">Заказать</a>
+                        <div class="btn kart--tovara--btn modal--btn">
+                            <a class="open---modal" href="javascript:void(0)">Заказать</a>
                         </div>
                     </div>
                </div>
@@ -216,6 +239,7 @@
     </footer>
 
     <script src="./../js/jquery.js"></script>
+    <script src="../js/jquery.maskedinput.min.js"></script>
     <script src="./../js/script.js"></script>
 </body>
 
