@@ -1,4 +1,7 @@
 @media screen and (max-width: 1200px) {
+	#slider {
+		padding-top: 50px;
+	}
     #header {
         position: fixed;
         width: 100%;

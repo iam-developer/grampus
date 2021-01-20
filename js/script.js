@@ -50,8 +50,8 @@ $('.close--button').on('click', function() {
     adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: 2200,
-    prevArrow: "<img class='left__arrow' src='img/left-arrow.png'>",
-    nextArrow: "<img class='right__arrow' src='img/right-arrow.png'>",
+    prevArrow: "<div class='left__arrow'><div>",
+    nextArrow: "<div class='right__arrow'></div>",
   });
 });
 
@@ -67,4 +67,11 @@ let preloader = document.getElementById("preloader");
 window.onload = function () {
   preloader.style.display = "none";
 };
+
+
+
+
+
+
+
 
